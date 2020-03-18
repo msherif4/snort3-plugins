@@ -1,2 +1,11 @@
-# snort3-plugins
-snort3 daq &amp; logger plugins 
+# Snort3 DAQs and Plugins
+
+## AFXDP DAQ for SNORT3
+ 
+
+## Memif DAQ for SNORT3
+
+
+## DPDK DAQ for SNORT3
+
+## ZMQFB logger plugin

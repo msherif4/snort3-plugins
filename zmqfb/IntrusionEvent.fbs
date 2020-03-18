@@ -1,0 +1,62 @@
+//==============================================================================================================================
+// 8 bit: byte ubyte bool
+// 16 bit: short ushort
+// 32 bit: int uint float
+// 64 bit: long ulong double
+// Built-in non-scalar types:
+//
+
+ namespace std;
+ 
+ table IntrusionEvent
+ {
+    EventType:string;
+    EventID:uint;
+    EventSecond:uint;
+    EventMicrosecond:uint ;
+ 
+    SignatureID:uint;
+    GeneratorID:uint;
+    SignatureRevision:uint;
+    IntrusionRuleMessage:string;
+ 
+    ClassificationID:uint;
+    Classification:string;
+ 
+    PriorityID:uint;
+    Priority:string;
+ 
+    InitiatorIP:[ubyte];
+    ResponderIP:[ubyte];
+    InitiatorPort:ushort;
+    ResponderPort:ushort;
+ 
+    ICMP_TypeID:ushort;
+    ICMP_Type:string;
+    ICMP_CodeID:ushort;
+    ICMP_Code:string;
+    ProtocolID:ubyte;
+    Protocol:string;
+ 
+    Action:ubyte;
+    Status:ubyte;
+    MPLS_Label:uint;
+    VLAN_ID:ushort;
+ 
+    IntrusionPolicyUUID:[ubyte];
+    IntrusionPolicy:string;
+ 
+    UserID:uint;
+    UserName:string;
+ 
+    EventPriority:string;
+    Hostname:string;
+ 
+    DeviceIP:string;
+    DeviceUUID:[ubyte];
+    DeviceSerialNumber:string;
+ 
+    MatchedRules:[string];
+}
+ 
+ root_type IntrusionEvent;
